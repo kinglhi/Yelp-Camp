@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YelpCamp</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/campgrounds.css">
+        <!--<link rel="stylesheet" href="/stylesheets/landing.css">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
+    </head>
+    <body>
+        <nav>
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                        <a class="navbar-brand" href="/">Yelp Camp</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/campgrounds">Home</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                           <% if(!currentUser) { %>
+                                <li><a href="/login">Login</a></li>
+                                <li><a href="/register">Sign Up</a></li>
+                            <% } else { %>
+                                <li><a href="#">Logged in as <%= currentUser.username %></a></li>
+                                <li><a href="/logout">Logout</a></li>
+                            <% } %>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <% if(success && success.length > 0) { %>
+            <div class="container">
+                <div class="alert alert-success" role="alert"><%= success %></div>
+            </div>
+        <% } else if(error && error.length > 0){ %>
+            <div class="container">
+                <div class="alert alert-danger" role="alert"><%= error %></div>
+            </div>
+        <% } %>
+        
+        
+        
+        
