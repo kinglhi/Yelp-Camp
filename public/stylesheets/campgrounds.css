@@ -28,3 +28,11 @@ position:absolute;
    color: #fff;
    text-align: center;
 }
+@media (min-width:320px)  {
+  body {
+      font-size: 1.5em;
+  }
+  #landing-header h1{
+    
+  }
+}
