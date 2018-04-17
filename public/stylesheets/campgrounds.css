@@ -29,10 +29,53 @@ position:absolute;
    text-align: center;
 }
 @media (min-width:320px)  {
-  body {
-      font-size: 1.5em;
-  }
-  #landing-header h1{
-    
-  }
+     .navbar-header {
+    float: none;
+ }
+ .navbar-left,.navbar-right {
+    float: none !important;
+ }
+ .navbar-toggle {
+    display: block;
+ }
+ .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+ }
+ .navbar-collapse.collapse {
+    display: none!important;
+ }
+ .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+ }
+ .navbar-nav>li {
+    float: none;
+ }
+ .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ .collapse.in{
+    display:block !important;
+ }
+ .navbar-inverse .navbar-nav {
+    padding-left: 10px;
+    line-height: normal;
+    text-align: center;
+ }
+ .navbar-inverse .navbar-nav>li {
+    display: inline-block;
+    margin-bottom: 0;
+ }
+ .navbar-inverse .navbar-nav > li {
+    width: 100%;
+    border-bottom: 1px solid #EDEDED;
+    position: relative;
+    margin: 8px 0 0 0;
+    padding: 0 0 8px 0;
+ }
+ .navbar-inverse .navbar-nav > li  a {
+    text-align: left;
+ }
 }

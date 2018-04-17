@@ -7,6 +7,10 @@ body{
   text-align: center;
   padding-top: 40vh;
   font-size-adjust: inherit; 
+  font-size: 0.5em;
+}
+.btn-group-lg>.btn, .btn-lg {
+  width: 20%;
 }
 #landing-header h1 {
   color: #fff;
@@ -20,22 +24,8 @@ body{
   background: rgba(0, 0, 0, 0.1);
   color: #000;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 }
-@media (min-width:320px)  {
-  #landing-header h1{
-    font-size: 5em;
-  }
-  a #campgroundBox .btn .btn-lg .btn-sucess{
-    font-size: 40px;
-  }
-}
-
-
-
-
-
-
 .slideshow { 
   position: fixed;
   width: 100%;
@@ -99,4 +89,13 @@ body{
 /* Older browser support - .no-cssanimations class added by modernizr */
 .no-cssanimations .slideshow li {
 	opacity: 1;
+}
+
+@media (min-width:320px)  {
+  #landing-header h1{
+    font-size: 5em;
+  }
+  a #campgroundBox .btn .btn-lg .btn-sucess{
+    font-size: 40px;
+  }
 }
