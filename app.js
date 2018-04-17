@@ -21,8 +21,8 @@ app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 
-// mongoose.connect("mongodb://localhost/yelp_camp_v12_Deployed");
-mongoose.connect(process.env.DATABASEURL);
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v12_Deployed";
+mongoose.connect(url);
 // mongoose.connect("mongodb://kinglhi:!Chan!Liol007@ds247439.mlab.com:47439/yelpcamp");
 // seedDB();
 

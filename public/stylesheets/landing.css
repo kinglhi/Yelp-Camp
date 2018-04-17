@@ -10,6 +10,21 @@ body{
 #landing-header h1 {
   color: #fff;
 }
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+  #landing-header h1{
+    font-size: 300px;
+  }
+}
+
+
+
+
+
+
 .slideshow { 
   position: fixed;
   width: 100%;

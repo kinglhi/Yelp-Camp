@@ -4,6 +4,7 @@
         <title>YelpCamp</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="/stylesheets/campgrounds.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
         <!--<link rel="stylesheet" href="/stylesheets/landing.css">-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
     </head>
@@ -22,12 +23,12 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="/campgrounds">Home</a></li>
+                            <li><a href="/campgrounds">Home <i class="fas fa-home"></i></a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                            <% if(!currentUser) { %>
-                                <li><a href="/login">Login</a></li>
-                                <li><a href="/register">Sign Up</a></li>
+                                <li><a href="/login">Login <i class="far fa-user"></i></a></li>
+                                <li><a href="/register">Sign Up <i class="fas fa-user-plus"></i></a></li>
                             <% } else { %>
                                 <li><a href="#">Logged in as <%= currentUser.username %></a></li>
                                 <li><a href="/logout">Logout</a></li>
