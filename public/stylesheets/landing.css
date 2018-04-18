@@ -90,6 +90,12 @@ body{
 .no-cssanimations .slideshow li {
 	opacity: 1;
 }
+.aboutCampground {
+  display: block;
+  margin: 50px auto;
+  background-color: #fff;
+  color: #000;
+}
 
 @media (min-width:320px)  {
   #landing-header h1{

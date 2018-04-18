@@ -14,11 +14,6 @@ router.get("/", function(req, res) {
     })
 });
 
-// About YelpCamp page 
-router.get("/about", function(req, res) {
-   res.render("campgrounds/about"); 
-});
-
 //NEW route - shows form to create new campground
 router.get("/new", middleware.isLoggedIn, function(req, res) {
     res.render("campgrounds/new");

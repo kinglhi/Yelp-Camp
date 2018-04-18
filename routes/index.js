@@ -8,6 +8,12 @@ router.get("/", function(req, res) {
    res.render("landingPage"); 
 });
 
+// About YelpCamp page 
+router.get("/about", function(req, res) {
+   res.render("about"); 
+});
+
+
 // AUTHENTICATION ROUTES
 // Sign up route - GET
 router.get("/register", function(req, res) {
